@@ -1,53 +1,7 @@
 
-
 export default function CourseDetail() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-display min-h-screen flex flex-col overflow-x-hidden">
-      {/* Top Navbar */}
-      <header className="sticky top-0 z-50 bg-card-light dark:bg-card-dark border-b border-[#f0f2f4] dark:border-[#2a3642] px-6 lg:px-10 py-3 shadow-sm">
-        <div className="flex items-center justify-between mx-auto max-w-[1440px]">
-          <div className="flex items-center gap-8">
-            <a className="flex items-center gap-3 text-text-main-light dark:text-text-main-dark group" href="#">
-              <div className="size-8 text-primary">
-                <span className="material-symbols-outlined text-4xl">school</span>
-              </div>
-              <h2 className="text-xl font-bold leading-tight tracking-[-0.015em] group-hover:text-primary transition-colors">EduCourse</h2>
-            </a>
-            <nav className="hidden md:flex items-center gap-6">
-              <a className="text-text-main-light dark:text-text-main-dark text-sm font-medium hover:text-primary transition-colors" href="#">Danh mục</a>
-              <a className="text-text-main-light dark:text-text-main-dark text-sm font-medium hover:text-primary transition-colors" href="#">Giảng dạy</a>
-              <a className="text-text-main-light dark:text-text-main-dark text-sm font-medium hover:text-primary transition-colors" href="#">Học tập</a>
-            </nav>
-          </div>
-          <div className="flex flex-1 justify-end gap-6 items-center">
-            <div className="hidden lg:flex w-full max-w-sm">
-              <div className="relative w-full">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <span className="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark text-[20px]">search</span>
-                </div>
-                <input className="block w-full pl-10 pr-3 py-2 border-none rounded-full leading-5 bg-[#f0f2f4] dark:bg-[#2a3642] text-text-main-light dark:text-text-main-dark placeholder-text-sub-light dark:placeholder-text-sub-dark focus:outline-none focus:ring-2 focus:ring-primary sm:text-sm h-10 transition-all" placeholder="Tìm khóa học..." type="search" />
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#2a3642] lg:hidden">
-                <span className="material-symbols-outlined text-text-main-light dark:text-text-main-dark">search</span>
-              </button>
-              <a className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#2a3642] relative" href="#">
-                <span className="material-symbols-outlined text-text-main-light dark:text-text-main-dark">shopping_cart</span>
-                <span className="absolute top-1 right-1 size-2 bg-red-500 rounded-full border border-white dark:border-[#1a2632]"></span>
-              </a>
-              <div className="hidden sm:flex gap-2">
-                <button className="h-9 px-4 rounded-lg border border-[#d1d5db] dark:border-[#4b5563] text-text-main-light dark:text-text-main-dark text-sm font-bold hover:bg-gray-50 dark:hover:bg-[#2a3642] transition-colors">
-                  Đăng nhập
-                </button>
-                <button className="h-9 px-4 rounded-lg bg-primary text-white text-sm font-bold hover:bg-blue-600 transition-colors shadow-sm shadow-blue-500/30">
-                  Đăng ký
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+    <>
       {/* Main Content Layout */}
       <main className="flex-grow flex justify-center py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-[1280px] w-full grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
@@ -59,7 +13,7 @@ export default function CourseDetail() {
               <span className="text-text-sub-light dark:text-text-sub-dark">/</span>
               <a className="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors" href="#">Lập trình</a>
               <span className="text-text-sub-light dark:text-text-sub-dark">/</span>
-              <span className="text-text-main-light dark:text-text-main-dark font-medium truncate max-w-[200px] sm:max-w-none">Phát triển Web Fullstack với React &amp; Node.js</span>
+              <span className="text-text-main-light dark:text-text-main-dark font-medium truncate max-w-[200px] sm:max-w-none">Phát triển Web Fullstack với React & Node.js</span>
             </nav>
             {/* Header Section (Mobile Only - Video Placeholder) */}
             <div className="lg:hidden w-full aspect-video rounded-xl overflow-hidden relative group cursor-pointer shadow-lg mb-4">
@@ -73,7 +27,7 @@ export default function CourseDetail() {
             {/* Page Heading */}
             <div className="flex flex-col gap-4">
               <h1 className="text-3xl sm:text-4xl font-black leading-tight tracking-tight text-text-main-light dark:text-text-main-dark">
-                Phát triển Web Fullstack với React &amp; Node.js
+                Phát triển Web Fullstack với React & Node.js
               </h1>
               <p className="text-lg text-text-sub-light dark:text-text-sub-dark">
                 Trở thành lập trình viên Full-stack chuyên nghiệp chỉ với một khóa học. Làm chủ HTML, CSS, Javascript, Node, React, MongoDB và hơn thế nữa!
@@ -174,7 +128,7 @@ export default function CourseDetail() {
                     <div className="flex items-center justify-between p-3 pl-12 hover:bg-gray-50 dark:hover:bg-[#252f3e] group/item">
                       <div className="flex items-center gap-3">
                         <span className="material-symbols-outlined text-[18px] text-text-sub-light dark:text-text-sub-dark">description</span>
-                        <span className="text-sm text-text-main-light dark:text-text-main-dark group-hover/item:text-primary transition-colors">Tài liệu tham khảo &amp; Source Code</span>
+                        <span className="text-sm text-text-main-light dark:text-text-main-dark group-hover/item:text-primary transition-colors">Tài liệu tham khảo & Source Code</span>
                       </div>
                       <span className="text-sm text-text-sub-light dark:text-text-sub-dark">01:25</span>
                     </div>
@@ -187,7 +141,7 @@ export default function CourseDetail() {
                   <summary className="flex items-center justify-between p-4 bg-[#f9fafb] dark:bg-[#1f2937] cursor-pointer hover:bg-gray-100 dark:hover:bg-[#2d3748] transition-colors">
                     <div className="flex items-center gap-3">
                       <span className="material-symbols-outlined transform group-open:rotate-180 transition-transform text-text-sub-light dark:text-text-sub-dark">expand_more</span>
-                      <span className="font-bold text-text-main-light dark:text-text-main-dark">Phần 2: Kiến thức HTML &amp; CSS Nâng cao</span>
+                      <span className="font-bold text-text-main-light dark:text-text-main-dark">Phần 2: Kiến thức HTML & CSS Nâng cao</span>
                     </div>
                     <span className="text-sm text-text-sub-light dark:text-text-sub-dark">15 bài học • 2h 30m</span>
                   </summary>
@@ -408,52 +362,6 @@ export default function CourseDetail() {
           </button>
         </div>
       </div>
-      {/* Footer */}
-      <footer className="bg-[#101922] text-white pt-16 pb-8 px-6 lg:px-10 mt-12 mb-20 lg:mb-0">
-        <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-3xl text-primary">school</span>
-              <span className="text-xl font-bold">EduCourse</span>
-            </div>
-            <p className="text-gray-400 text-sm">Nền tảng học trực tuyến hàng đầu cho người mới bắt đầu đến chuyên gia.</p>
-          </div>
-          <div>
-            <h3 className="font-bold mb-4 text-lg">Khám phá</h3>
-            <ul className="flex flex-col gap-2 text-sm text-gray-400">
-              <li><a className="hover:text-white" href="#">Blog</a></li>
-              <li><a className="hover:text-white" href="#">Về chúng tôi</a></li>
-              <li><a className="hover:text-white" href="#">Sự nghiệp</a></li>
-              <li><a className="hover:text-white" href="#">Nhà đầu tư</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold mb-4 text-lg">Cộng đồng</h3>
-            <ul className="flex flex-col gap-2 text-sm text-gray-400">
-              <li><a className="hover:text-white" href="#">Học viên</a></li>
-              <li><a className="hover:text-white" href="#">Đối tác</a></li>
-              <li><a className="hover:text-white" href="#">Nhà phát triển</a></li>
-              <li><a className="hover:text-white" href="#">Giảng viên</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold mb-4 text-lg">Liên hệ</h3>
-            <ul className="flex flex-col gap-2 text-sm text-gray-400">
-              <li><a className="hover:text-white" href="#">Hỗ trợ</a></li>
-              <li><a className="hover:text-white" href="#">Điều khoản</a></li>
-              <li><a className="hover:text-white" href="#">Chính sách bảo mật</a></li>
-              <li><a className="hover:text-white" href="#">Sơ đồ trang web</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-[1280px] mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2023 EduCourse, Inc. All rights reserved.</p>
-          <div className="flex gap-4">
-            <span className="material-symbols-outlined cursor-pointer hover:text-white">language</span>
-            <span className="cursor-pointer hover:text-white">Tiếng Việt</span>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }

@@ -1,43 +1,7 @@
 
-
 export default function CourseList() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-      {/* Header */}
-      <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-gray-900 px-4 py-3 shadow-sm lg:px-10">
-        <div className="flex items-center gap-4 text-slate-900 dark:text-white">
-          <div className="size-8 text-primary">
-            <span className="material-symbols-outlined text-3xl">school</span>
-          </div>
-          <h2 className="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">CourseOnline</h2>
-        </div>
-        <div className="hidden lg:flex flex-1 justify-center gap-8">
-          <nav className="flex items-center gap-6">
-            <a className="text-slate-900 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Trang chủ</a>
-            <a className="text-primary text-sm font-medium leading-normal transition-colors" href="#">Khóa học</a>
-            <a className="text-slate-900 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Giảng viên</a>
-            <a className="text-slate-900 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Doanh nghiệp</a>
-            <a className="text-slate-900 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Blog</a>
-          </nav>
-        </div>
-        <div className="flex items-center gap-3">
-          {/* Mobile Search Icon (visible on small screens) */}
-          <button className="lg:hidden text-slate-500 dark:text-gray-400">
-            <span className="material-symbols-outlined">search</span>
-          </button>
-          <div className="hidden sm:flex gap-2">
-            <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary hover:bg-blue-600 text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors shadow-sm">
-              <span className="truncate">Đăng ký</span>
-            </button>
-            <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-slate-100 dark:bg-gray-800 hover:bg-slate-200 dark:hover:bg-gray-700 text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors border border-transparent dark:border-gray-700">
-              <span className="truncate">Đăng nhập</span>
-            </button>
-          </div>
-          <button className="lg:hidden text-slate-900 dark:text-white ml-2">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-      </header>
+    <>
       {/* Hero Section */}
       <div className="w-full bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-[1440px] px-4 md:px-10 lg:px-20 py-6 md:py-8">
@@ -310,7 +274,7 @@ export default function CourseList() {
                     <div className="flex items-center gap-2 mb-2">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded-full">Development</span>
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white line-clamp-2 mb-2 group-hover:text-primary transition-colors">JavaScript Nâng Cao: ES6+ &amp; Async</h3>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white line-clamp-2 mb-2 group-hover:text-primary transition-colors">JavaScript Nâng Cao: ES6+ & Async</h3>
                     <p className="text-xs text-slate-500 dark:text-gray-400 mb-3 line-clamp-1">Giảng viên: Lê Hoàng</p>
                     <div className="flex items-center gap-1 mb-4">
                       <span className="text-yellow-500 font-bold text-sm">4.7</span>
@@ -421,48 +385,6 @@ export default function CourseList() {
           </div>
         </div>
       </div>
-      {/* Footer */}
-      <footer className="bg-white dark:bg-gray-900 border-t border-slate-200 dark:border-slate-800 py-12 px-4 md:px-10">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="col-span-1 md:col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="size-6 text-primary">
-                  <span className="material-symbols-outlined text-2xl">school</span>
-                </div>
-                <span className="font-bold text-lg text-slate-900 dark:text-white">CourseOnline</span>
-              </div>
-              <p className="text-slate-500 dark:text-gray-400 text-sm leading-relaxed">Nền tảng học trực tuyến hàng đầu với hàng ngàn khóa học từ các chuyên gia.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 dark:text-white mb-4">Về chúng tôi</h4>
-              <ul className="space-y-2 text-sm text-slate-500 dark:text-gray-400">
-                <li><a className="hover:text-primary" href="#">Giới thiệu</a></li>
-                <li><a className="hover:text-primary" href="#">Tuyển dụng</a></li>
-                <li><a className="hover:text-primary" href="#">Điều khoản</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 dark:text-white mb-4">Hợp tác</h4>
-              <ul className="space-y-2 text-sm text-slate-500 dark:text-gray-400">
-                <li><a className="hover:text-primary" href="#">Đăng ký giảng viên</a></li>
-                <li><a className="hover:text-primary" href="#">Đào tạo doanh nghiệp</a></li>
-                <li><a className="hover:text-primary" href="#">Liên hệ</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 dark:text-white mb-4">Kết nối</h4>
-              <div className="flex gap-4">
-                <a className="text-slate-400 hover:text-primary" href="#"><span className="material-symbols-outlined">public</span></a>
-                <a className="text-slate-400 hover:text-primary" href="#"><span className="material-symbols-outlined">mail</span></a>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-slate-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
-            <p>© 2024 CourseOnline. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
